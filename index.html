@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My Profile Site</title>
+	<link rel="stylesheet" href="public/css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+	<link rel="icon" href="public/images/letter_k.ico" sizes="16x16 32x32" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="stars">
+		</div>
+		<div class="twinkling">
+		</div>
+		<div id="profile">
+			<img id="profile-picture" src="public/images/full-moon.svg" alt="Keamogetswe Mphakalasi">
+		</div>
+	</header>
+	<main>
+		<section>
+			<div id="bio">
+				<div class="container">
+					<h2 class="heading">Bio</h2>
+					<p>I am Mr Keamogetswe Morobi Mphakalasi. I am a 3rd year BSc Computing student at the University of South Africa, from where I will graduate at the end of 2023. I am 26 years old and over the years have developed a deep passion for computer science, problem solving and as of late, systems development. I currently aim to be a full-stack engineer as I thoroughly enjoy working at all levels of web software development and one day wish to transition into cloud engineering.</p>
+				</div>
+			</div>
+			<hr>
+			<div id="work-experience">
+				<h2 class="heading">Work Experience</h2>
+				<div class="card-container">
+					<div class="card">
+						<div class="card-header">
+							<h3>Web Designer</h3><h4>at Injeanius Designs</h4><br>
+							<div class="card-logo">
+								<img src="public/images/illustration.png">
+							</div>
+						</div>
+						<hr class="card-divider">
+						<div class="card-body">
+							<div class="card-body-section">
+								<button class="card-button">Duration</button>
+								<div class="card-section-item collapsible">
+									<p>Sep 2020 - Feb 2021</p>
+								</div>
+							</div>
+							<div class="card-body-section">
+								<button class="card-button">Responsibilities</button>
+								<div class="card-section-item collapsible">
+									<p>Frontend web design and development of Wordpress websites.</p>
+								</div>
+							</div>
+							<div class="card-body-section">
+								<button class="card-button">Technologies</button>
+								<div class="card-section-item collapsible">
+									<p>HTML, CSS, PHP and Divi.</p>
+								</div>
+							</div>
+							<div class="card-body-section">
+								<button class="card-button">Reference</button>
+								<div class="card-section-item collapsible">
+									<p>Mrs Jeandre Roets<br>jeandre@injeanius.co.za</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<h3>Comp Sci Tutor</h3><h4>at Stellenbosch University</h4><br>
+							<div class="card-logo">
+								<img src="public/images/knowledge.png">
+							</div>
+						</div>
+						<hr class="card-divider">
+						<div class="card-body">
+							<div class="card-body-section">
+								<button class="card-button">Duration</button>
+								<div class="card-section-item collapsible">
+									<p>Feb 2018 - Jun 2018</p>
+								</div>
+							</div>
+							<div class="card-body-section">
+							<button class="card-button">Responsibilities</button>
+								<div class="card-section-item collapsible">
+									<p>Assisted students with programming exercises and semester project.</p>
+								</div>
+							</div>
+							<div class="card-body-section">
+								<button class="card-button">Technologies</button>
+								<div class="card-section-item collapsible">
+									<p>Java, Ubuntu.</p>
+								</div>
+							</div>
+							<div class="card-body-section">
+								<button class="card-button">Reference</button>
+								<div class="card-section-item collapsible">
+									<p>Prof Jaco Geldenhuys<br>geld@sun.ac.za</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="light-section">
+			<div id="project-container">
+				<h2 class="heading">Personal Projects</h2>
+				<div id="project-slides">
+					<div class="slide">	
+						<div class="slide-info">
+							<h3>Technologies:</h3>
+							<ul>
+								<li>Development - PostgreSQL (Prisma ORM), Express.js, ReactJS and Node.js (PERN)</li>
+								<li>Hosting - Heroku</li>
+							</ul><br>
+							<h3>Comments:</h3>
+							<p>Given the various types of data available to us in this technological era, I challenged myself to go beyond strings and integers and tackle a project that handles a data type that I am not very well acquainted with, hence video.</p>
+						</div>
+						<div class="slide-image-button">
+							<h3>YouTube Clone</h3>
+							<img class="slide-image" src="public/images/youtube.png"><br>
+							<div class="buttons">	
+								<button class="slide-button" title="Go to site" disabled>
+									<img class="slide-button-logo" src="public/images/worldwide.png">
+								</button>
+								<button class="slide-button" title="View source code" disabled>
+									<img class="slide-button-logo" src="public/images/code.png">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr id="projects-attr-divider">
+			<h2 class="heading">Contact Me</h2>
+			<div class="contact">
+				<button class="social-button" title="My Github" onclick="window.location.href='https://github.com/Keamo-getswe'">
+					<img class="socials" src="public/images/github.png">
+				</button>
+				<button class="social-button" title="My LinkedIn" onclick="window.location.href='https://www.linkedin.com/in/keamogetswe-mphakalasi'"/>
+					<img class="socials" src="public/images/linkedin.png">
+				</button>
+				<div id="email" style="position: relative;">
+					<button class="social-button" title="My email">
+						<img class="socials" src="public/images/email.png">
+					</button>
+					<span class="tooltip">Copied to clipboard</span>
+				</div>
+			</div>
+			<div class="attribution">
+				<p>Favicon made by <a href="https://www.flaticon.com/authors/laisa-islam-ani" title="Laisa Islam Ani">Laisa Islam Ani</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+				<p>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+				<p>Website designed, developed and maintained by Keamogetswe Mphakalasi.</p>
+			</div>
+		</section>
+	</main>	
+		<script src="public/scripts/index.js"></script>
+</body>
+</html>
