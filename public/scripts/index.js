@@ -1,12 +1,27 @@
-setCardCollapsibles();
+setCollapsibles();
 addEmailToClipboard();
 
-function setCardCollapsibles() {
-	var buttons = document.querySelectorAll(".card-button");
+function setCollapsibles() {
+	var cardBtns = document.querySelectorAll(".card-button");
+	var moreBtn = document.querySelector("#more-btn");
+	var restOfBio = moreBtn.parentNode.nextElementSibling;
+	var lessBtn = document.querySelector("#less-btn");
 	var openedCollapsible = [];
+	
+	moreBtn.addEventListener('click', function () {
+		lessBtn.innerHTML = "Less...";
+		moreBtn.innerHTML = "";
+		restOfBio.style.maxHeight = restOfBio.scrollHeight + "px";
+	});
 
-	for (var i = 0; i < buttons.length; ++i) {
-		buttons[i].addEventListener("click", function () {
+	lessBtn.addEventListener('click', function () {
+		restOfBio.style.maxHeight = null; 
+		moreBtn.innerHTML = "More...";
+		lessBtn.innerHTML = "";
+	})
+
+	for (var i = 0; i < cardBtns.length; ++i) {
+		cardBtns[i].addEventListener("click", function () {
 			var sectionItem = this.nextElementSibling;
 			if (sectionItem.style.maxHeight) {
 				sectionItem.style.maxHeight = null;
