@@ -1,7 +1,11 @@
-/**************************************Whole Site*/
+/**************************************************
+                  MOBILE VIEW
+**************************************************/
 
 *, html {
 	font-size: 16px;
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
@@ -16,10 +20,8 @@ body {
 	color: #f1f6f9ff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 100%;
-    margin: 0;
-    padding: 0;
 	text-align: center;
-	text-shadow: -1px 2px black;
+	text-shadow: -2px 3px black;
     width: 100%;
 }
 
@@ -32,22 +34,22 @@ hr {
 	border: 0px;
 	border-top: 2px solid #d69200ff;
 	height : 0px;
-	margin: 100px auto;
+	margin: 100px auto 200px;
 	width: 70%;
 }
 
 h2 {
 	color: #f0a500ff;
-	font-size: 5vw; /*change to absolute unit*/
+	font-size: 58px;
     text-align: center;
 }
 
 h3 {
-    font-size: 4.5vw; /*change to absolute unit*/
+    font-size: 45px;
 }
 
 h4 {
-    font-size: 3.5vw;
+    font-size: 34px;
     font-weight: 400;
 }
 
@@ -65,7 +67,7 @@ h3, h4 {
 }
 
 p {
-	font-size: calc(39px - 1.5vw);
+	font-size: 30px;
     text-align: justify;
     width: 90%;
 }
@@ -74,16 +76,308 @@ ul {
 	margin-left: 20px;
 }
 
-.heading {
-	padding-bottom: 25px;
+header {
+    background: #040b1aff url("../images/star-backdrop.svg") top center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+
+.stars {
+    background: transparent url("../images/star-foreground.svg") repeat top center;
+    display: block;
     width: 100%;
+    z-index: 2;
+}
+
+.twinkling {
+    display: none;
+}
+
+#moon {
+    width: 20%;
+}
+
+#dark-section {
+    background-image: linear-gradient(#040b1aff 20%, transparent 40%);
+}
+
+#bio {
+    padding-top: 100px;
+    height: 40vh;
+}
+
+.heading {
+	padding-bottom: 100px;
+    width: 100%;
+}
+
+#container {
+    left: 10%;
+    width: 90%;
+}
+
+.more-less-button {
+    border: none;
+    background-color: transparent;
+    color: #f0a500ff;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.collapsible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow-y: hidden;
+    padding: 9% 0;
+    width: 100%;
+}
+
+.card {
+    background-image: linear-gradient(0deg, #274684ff 20%, #071739ff 80%);
+    border-radius: 25px;
+    box-shadow: 25px;
+    display: inline-block;
+    height: 1080px;
+    margin: 0 15%;
+    min-width: 70%;
+}
+
+.card-header {
+    margin: 0 auto;
+    position: relative;
+    height: 30%;
+    width: 100%;
+}
+
+.card-logo {
+    background-color: #f0a500ff;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    z-index: 1;
+}
+
+.card-logo img {
+    width: 100%;
+}
+
+.card-divider {
+    border: 2px solid white;
+    position: relative;
+    bottom: 14%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -12.5%;
+    width: 100%;
+    min-height: 63%;
+    max-height: 65%;
+}
+
+.card-body-section {
+    border-bottom: 1px solid #d69200ff;
+    padding: 20px;
+    width: 65%;
+}
+
+.card-body-section:first-child {
+    padding-top: 0;
+}
+
+.card-body-section:last-child {
+    border-bottom: none;
+}
+
+.card-section-item p {
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.card-button {
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+   border: none;
+   font-size: 30px;
+   font-weight: 600;
+   padding: 20px 25px;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+#light-section {
+    background-image: linear-gradient(0deg, #709fdcff 96%, #071739ff 100%);
+}
+
+#project-container {
+    padding-top: 175px;
+}
+
+#project-slides {
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.slide {
+    background-image: linear-gradient(180deg, #709fdcff 40%, #b9d5fdff 95%);
+    border-radius: 25px;
+    box-shadow: -2px 2px 5px 1px black;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 100px;
+    width: 100%;
+}
+
+.slide-image-button {
+    order: 1;
+}
+
+.slide-image-button h3 {
+    color: white;
+}
+
+.slide-image {
+    width: 80%;
+}
+
+.buttons {
+    padding-bottom: 50px;
+}
+
+.slide-button {
+    background-color: #f0a500ff;
+    border-radius: 30px;
+    box-shadow: -1px 1px 3px 1px black;
+    padding: 10px;
+    margin: 0 10px;
+    width: 35%;
+}
+
+.slide-button-logo {
+    width: 75px;
+}
+
+.slide-info {
+    order: 2;
+}
+
+.slide-info h3 {
+    color: white;
+    padding-bottom: 50px;
+}
+
+.slide-info p {
+    margin: 0 auto;
+    color: #071739ff;
+    font-weight: 600;
+    text-shadow: none;
+    width: 75%;
+}
+
+#project-attr-divider {
+    margin-top: 200px;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+#email {
+    position: relative;
+}
+
+.socials {
+    width: 150px;
+    height: 150px;
+}
+
+.social-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.tooltip {
+	background-color: black;
+	border-radius: 6px;
+	color: #f0a500ff;
+	font-size: 36px;
+	font-weight: 600;
+	text-align: center;
+	padding: 8px 8px;
+	position: absolute;
+	bottom: 106%;
+	left: 50%;
+	margin-left: -100px;
+	width: 180px;
+	visibility: hidden;
+    z-index: 1;
+}
+
+.tooltip::after {
+	content: " ";
+	position: absolute;
+	top: 98%;
+	left: 50%;
+	margin-left: -10px;
+	border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.attribution {
+	margin: 0 auto;
+	padding-bottom: 100px;
+	width: 75%;
+}
+
+.attribution p {
+	color: #071739ff;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.5;
+	text-align: center;
+	text-shadow: none;
 }
 
 /**************************************************
 				DESKTOP VIEW
 **************************************************/
 
-@media only screen and (min-width: 764px) {
+@media only screen and (min-width: 425px) and (max-width: 1024px) {
 
 	/**************************************Header*/
 
@@ -253,6 +547,7 @@ ul {
 	.card-container {
 		display: flex;
 		justify-content: space-evenly;
+        margin: 0 auto;
 		width: 100%;
 	}
 
