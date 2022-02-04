@@ -4,9 +4,9 @@
 
 *, html {
 	font-size: 16px;
-    margin: 0;
-    padding: 0;
-    position: relative;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 a {
@@ -22,7 +22,7 @@ body {
 	font-size: 100%;
 	text-align: center;
 	text-shadow: -2px 3px black;
-    width: 100%;
+	width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,22 +34,22 @@ hr {
 	border: 0px;
 	border-top: 2px solid #d69200ff;
 	height : 0px;
-	margin: 100px auto 200px;
+	margin: 75px auto 25px;
 	width: 70%;
 }
 
 h2 {
 	color: #f0a500ff;
-	font-size: 58px;
+	font-size: 2.5em;
     text-align: center;
 }
 
 h3 {
-    font-size: 45px;
+    font-size: 2em;
 }
 
 h4 {
-    font-size: 34px;
+    font-size: 1.4em;
     font-weight: 400;
 }
 
@@ -59,17 +59,18 @@ h3, h4 {
 }
 
 .card-header h3 {
-    margin: 100px 0 10px 0;
+    margin: 0 auto 10px;
 }
 
 .card-header h4 {
-    margin-top: 10px;
+    margin: 10px auto 0;
 }
 
 p {
-	font-size: 30px;
-    text-align: justify;
-    width: 90%;
+	font-size: 1.3em;
+	margin: 0 auto;
+	text-align: justify;
+	width: 75%;
 }
 
 ul {
@@ -78,12 +79,13 @@ ul {
 
 header {
     background: #040b1aff url("../images/star-backdrop.svg") top center;
+    background-size: contain;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 50vh;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .stars {
@@ -95,10 +97,11 @@ header {
 
 .twinkling {
     display: none;
+    z-index: 1;
 }
 
 #moon {
-    width: 20%;
+    width: 30%;
 }
 
 #dark-section {
@@ -107,17 +110,17 @@ header {
 
 #bio {
     padding-top: 100px;
-    height: 40vh;
-}
-
-.heading {
-	padding-bottom: 100px;
     width: 100%;
 }
 
+.heading {
+	padding-bottom: 25px;
+	width: 100%;
+}
+
 #container {
-    left: 10%;
-    width: 90%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .more-less-button {
@@ -125,7 +128,7 @@ header {
     background-color: transparent;
     color: #f0a500ff;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -140,38 +143,38 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     overflow-y: hidden;
-    padding: 9% 0;
+    overflow-x: scroll;
+    padding: 25px 0;
     width: 100%;
+}
+
+#work-experience {
+	padding: 50px 0;
 }
 
 .card {
     background-image: linear-gradient(0deg, #274684ff 20%, #071739ff 80%);
     border-radius: 25px;
-    box-shadow: 25px;
+    box-shadow: -2px 2px 5px 1px black;
     display: inline-block;
-    height: 1080px;
-    margin: 0 15%;
-    min-width: 70%;
+    margin: 0 12%;
+    min-width: 76%;
+    padding: 50px 0 30px;
 }
 
 .card-header {
     margin: 0 auto;
-    position: relative;
-    height: 30%;
-    width: 100%;
+    width: 80%;
 }
 
 .card-logo {
     background-color: #f0a500ff;
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius: 50%;
-    padding: 30px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    z-index: 1;
+    margin: 0 auto;
+    padding: 20px;
+    width: 35%;
+    /* z-index: 1; */
 }
 
 .card-logo img {
@@ -181,23 +184,19 @@ header {
 .card-divider {
     border: 2px solid white;
     position: relative;
-    bottom: 14%;
+    bottom: 21%;
 }
 
 .card-body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: -12.5%;
+    flex-wrap: wrap;
     width: 100%;
-    min-height: 63%;
-    max-height: 65%;
 }
 
 .card-body-section {
     border-bottom: 1px solid #d69200ff;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 0 20px;
     width: 65%;
 }
 
@@ -210,9 +209,9 @@ header {
 }
 
 .card-section-item p {
-    font-size: 30px;
-    margin: 0;
+    font-size: 1.15em;
     text-align: center;
+    text-shadow: -1px 2px black;
     width: 100%;
 }
 
@@ -221,7 +220,7 @@ header {
    color: white;
    cursor: pointer;
    border: none;
-   font-size: 30px;
+   font-size: 1.3em;
    font-weight: 600;
    padding: 20px 25px;
    -moz-user-select: none;
@@ -236,7 +235,7 @@ header {
 }
 
 #project-container {
-    padding-top: 175px;
+    padding-top: 100px;
 }
 
 #project-slides {
@@ -245,16 +244,13 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
 }
 
 .slide {
-    background-image: linear-gradient(180deg, #709fdcff 40%, #b9d5fdff 95%);
-    border-radius: 25px;
-    box-shadow: -2px 2px 5px 1px black;
     display: flex;
     flex-direction: column;
-    padding: 100px 0 100px;
+    padding: 75px 0;
     width: 100%;
 }
 
@@ -266,17 +262,23 @@ header {
     color: white;
 }
 
+.slide-image-button h4{
+	font-weight: 600;
+	text-shadow: -2px 2px black;
+}
+
 .slide-image {
-    width: 80%;
+    width: 75%;
 }
 
 .buttons {
     padding-bottom: 50px;
+    opacity: 0.6;
 }
 
 .slide-button {
     background-color: #f0a500ff;
-    border-radius: 30px;
+    border-radius: 18px;
     box-shadow: -1px 1px 3px 1px black;
     padding: 10px;
     margin: 0 10px;
@@ -284,7 +286,7 @@ header {
 }
 
 .slide-button-logo {
-    width: 75px;
+    width: 30px;
 }
 
 .slide-info {
@@ -293,7 +295,7 @@ header {
 
 .slide-info h3 {
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 .slide-info p {
@@ -304,14 +306,15 @@ header {
     width: 75%;
 }
 
-#project-attr-divider {
-    margin-top: 200px;
+#projects-attr-divider {
+    margin: 0px auto 75px;
 }
 
 #contact {
     display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 100px;
+    padding: 50px 0 75px;
+    align-content: center;
+    flex-direction: column;
 }
 
 #email {
@@ -319,14 +322,14 @@ header {
 }
 
 .socials {
-    width: 150px;
-    height: 150px;
+    margin: 25px 0;
+    width: 30%;
 }
 
 .social-button {
     background-color: transparent;
     border: none;
-    border-radius: 2px;
+    border-radius: ;
     cursor: pointer;
 }
 
@@ -334,39 +337,27 @@ header {
 	background-color: black;
 	border-radius: 6px;
 	color: #f0a500ff;
-	font-size: 36px;
+	font-size: 0.8em;
 	font-weight: 600;
 	text-align: center;
-	padding: 8px 8px;
-	position: absolute;
-	bottom: 106%;
-	left: 50%;
-	margin-left: -100px;
-	width: 180px;
+	padding: 10px;
+	/* position: absolute; */
+	/* top: -150%; */
+	/* left: 50%; */
+	/* margin-left: -60px; */
+	width: 5%;
 	visibility: hidden;
-    z-index: 1;
-}
-
-.tooltip::after {
-	content: " ";
-	position: absolute;
-	top: 98%;
-	left: 50%;
-	margin-left: -10px;
-	border-width: 10px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
+	z-index: 1;
 }
 
 .attribution {
 	margin: 0 auto;
-	padding-bottom: 100px;
-	width: 75%;
+	padding-bottom: 75px;
+	width: 100%;
 }
 
 .attribution p {
 	color: #071739ff;
-	font-size: 22px;
 	font-weight: 600;
 	line-height: 1.5;
 	text-align: center;
@@ -377,7 +368,7 @@ header {
 				DESKTOP VIEW
 **************************************************/
 
-@media only screen and (min-width: 425px) and (max-width: 1024px) {
+@media screen and (min-width: 425px) {
 
 	/**************************************Header*/
 
@@ -402,14 +393,7 @@ header {
 	}
 
 	header {
-		background: #040b1aff url(../images/star-backdrop.svg) top center;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
 		height: 100vh;
-		margin: 0;
-		z-index: 0;
 	}
 
 	.stars, .twinkling {
@@ -425,12 +409,14 @@ header {
 
 	.stars {
 		background: transparent url(../images/star-foreground.svg) repeat top center;
-		z-index: 2;
+		background-size: contain;
+		/* z-index: 3; */
 	}
 
 	.twinkling {
 		background: transparent url(../images/twinkling.svg) repeat top center;
-		z-index: 1;
+		background-size: contain;
+		z-index: 0;
 		-moz-animation: move-twink-back 150s linear infinite;
 		-ms-animation: move-twink-back 150s linear infinite;
 		-o-animation: move-twink-back 150s linear infinite;
@@ -446,19 +432,19 @@ header {
 		padding-top: 225px;
 	}
 
-	#profile {
+	#moon-container {
 		width: 100%;
 		z-index: 2;
 	}
 
-	#profile-picture {
+	#moon {
 		border-radius: 70%;
 		border: none;
-		width: 20%;
+		/* width: 20%; */
+		z-index: 2;
 	}
 
 	#bio {
-		word-spacing: 0.3em;
 		width:  100%;
 	}
 
@@ -477,6 +463,10 @@ header {
 		/*font-size: 1rem;*/
 	}
 
+	hr {
+		width: 30%;
+	}
+
 	#work-experience {
 		margin-bottom: 75px;
 	}
@@ -487,11 +477,12 @@ header {
 		box-shadow: -2px 2px 5px 1px black;
 		display: inline-block;
 		color: black;
+		margin: 0 50px;
 		word-wrap: break-word;
-		min-width: 200px;
-		max-width: 250px;
+		/*min-width: 200px;
+		max-width: 250px;*/
 		padding-bottom: 15px;
-		width: 28%;
+		max-width: 325px;
 	}
 
 	.card p {
@@ -545,10 +536,8 @@ header {
 	}
 
 	.card-container {
-		display: flex;
-		justify-content: space-evenly;
-        margin: 0 auto;
-		width: 100%;
+		/* justify-content: space-evenly; */
+		margin: 0 auto;
 	}
 
 	.card-divider {
@@ -559,7 +548,7 @@ header {
 	}
 
 	.card-logo img {
-		width: 90%;
+		width: 100%;
 	}
 
 	.card-section-item {
@@ -629,11 +618,9 @@ header {
 		border: 2px solid white;
 		border-radius: 50%;
 		box-shadow: -2px 3px 5px 1px black;
-		padding: 15px;
-		position: absolute;
-		bottom: -35%;
-		height: 85px;
-		width: 85px;
+		padding: 20px;
+		height: 90px;
+		width: 90px;
 	}
 
 	.buttons {
@@ -643,9 +630,6 @@ header {
 	}
 
 	#project-slides {
-		background-color: #274684ff;
-		box-shadow: -2px 2px 5px 1px black;
-		border-radius: 25px;
 		display: flex;
 		justify-content: space-evenly;
 		margin: 0 auto;
@@ -712,17 +696,17 @@ header {
 
 	.tooltip::after {
 		content: " ";
-  		position: absolute;
-  		top: 50%;
-  		right: 100%; /* To the left of the tooltip */
-  		margin-top: -5px;
-  		border-width: 5px;
-  		border-style: solid;
-  		border-color: transparent black transparent transparent;
+		position: absolute;
+		top: 100%;
+		right: 100%; /* To the left of the tooltip */
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent black transparent transparent;
 	}
 
 	.tooltip {
-		visibility: hidden;
+		/* visibility: hidden; */
 		width: 120px;
 		background-color: black;
 		color: #f0a500ff;
