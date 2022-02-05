@@ -11,6 +11,7 @@
 
 a {
 	color: #f0a500ff;
+	font-size: 1em;
 	font-weight: 600;
 	text-shadow: none;
 }
@@ -34,7 +35,7 @@ hr {
 	border: 0px;
 	border-top: 2px solid #d69200ff;
 	height : 0px;
-	margin: 75px auto 25px;
+	margin: 100px auto 75px;
 	width: 70%;
 }
 
@@ -85,7 +86,6 @@ header {
     flex-direction: column;
     align-items: center;
     height: 50vh;
-    /* margin: 0; */
 }
 
 .stars {
@@ -157,8 +157,9 @@ header {
     border-radius: 25px;
     box-shadow: -2px 2px 5px 1px black;
     display: inline-block;
-    margin: 0 12%;
-    min-width: 76%;
+    margin: 0 50px;
+    min-width: 280px;
+    width: 76%;
     padding: 50px 0 30px;
 }
 
@@ -171,6 +172,7 @@ header {
     background-color: #f0a500ff;
     border: 3px solid white;
     border-radius: 50%;
+    box-shadow: -2px 3px 5px 1px black;
     margin: 0 auto;
     padding: 20px;
     width: 35%;
@@ -250,7 +252,7 @@ header {
 .slide {
     display: flex;
     flex-direction: column;
-    padding: 75px 0;
+    padding: 50px 0 75px;
     width: 100%;
 }
 
@@ -259,7 +261,7 @@ header {
 }
 
 .slide-image-button h3 {
-    color: white;
+    color: #f0a500ff;
 }
 
 .slide-image-button h4{
@@ -268,7 +270,8 @@ header {
 }
 
 .slide-image {
-    width: 75%;
+    width: 65%;
+    max-width: 358px;
 }
 
 .buttons {
@@ -279,7 +282,7 @@ header {
 .slide-button {
     background-color: #f0a500ff;
     border-radius: 18px;
-    box-shadow: -1px 1px 3px 1px black;
+    /* box-shadow: -1px 1px 3px 1px black; */
     padding: 10px;
     margin: 0 10px;
     width: 35%;
@@ -295,7 +298,9 @@ header {
 
 .slide-info h3 {
     color: white;
+    font-weight: 400;
     padding-bottom: 25px;
+    text-shadow: -3px 2px black;
 }
 
 .slide-info p {
@@ -307,13 +312,13 @@ header {
 }
 
 #projects-attr-divider {
-    margin: 0px auto 75px;
+    margin: 25px auto 100px;
 }
 
 #contact {
     display: flex;
     padding: 50px 0 75px;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -337,14 +342,10 @@ header {
 	background-color: black;
 	border-radius: 6px;
 	color: #f0a500ff;
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight: 600;
 	text-align: center;
 	padding: 10px;
-	/* position: absolute; */
-	/* top: -150%; */
-	/* left: 50%; */
-	/* margin-left: -60px; */
 	width: 5%;
 	visibility: hidden;
 	z-index: 1;
@@ -426,6 +427,20 @@ header {
 
 	/****************************************Main*/
 
+    .heading {
+    	padding-bottom: 75px;
+    }
+
+
+	.card-header {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		padding: 15px 0;
+		position: relative;
+	}
+
 	#dark-section {
 		background-image: linear-gradient( #040b1aff 20%, transparent 40% );
 		margin-top: -25px;
@@ -440,12 +455,7 @@ header {
 	#moon {
 		border-radius: 70%;
 		border: none;
-		/* width: 20%; */
 		z-index: 2;
-	}
-
-	#bio {
-		width:  100%;
 	}
 
 	.container {
@@ -460,10 +470,10 @@ header {
 		color: #f0a500ff;
 		cursor: pointer;
 		font-weight: 600;
-		/*font-size: 1rem;*/
 	}
 
 	hr {
+		margin: 125px auto 75px;
 		width: 30%;
 	}
 
@@ -479,10 +489,8 @@ header {
 		color: black;
 		margin: 0 50px;
 		word-wrap: break-word;
-		/*min-width: 200px;
-		max-width: 250px;*/
 		padding-bottom: 15px;
-		max-width: 325px;
+		max-width: 350px;
 	}
 
 	.card p {
@@ -494,7 +502,6 @@ header {
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 37%;
 	}
 
 	.card-body-section {
@@ -526,7 +533,6 @@ header {
 		background-color: transparent;
 		border: none;
 		font-weight: 600;
-		/*font-size: 15px;*/
 		padding: 20px 25px;
 		-moz-user-select: none;
 		-webkit-user-select: none;
@@ -535,16 +541,21 @@ header {
 		transition: transform 0.2s;
 	}
 
-	.card-container {
-		/* justify-content: space-evenly; */
-		margin: 0 auto;
-	}
-
 	.card-divider {
 		border: none;
 		border-top: 2px solid white;
 		margin: 0 auto;
 		width: 70%;
+	}
+
+	.card-logo {
+		background-color: #f0a500ff;
+		border: 2px solid white;
+		border-radius: 50%;
+		box-shadow: -2px 3px 5px 1px black;
+		padding: 20px;
+		height: 90px;
+		width: 90px;
 	}
 
 	.card-logo img {
@@ -561,8 +572,69 @@ header {
 		transition: max-height 0.2s ease-out;
 	}
 
+	#light-section {
+		background-image: linear-gradient(0deg, #709fdcff 94%, #071739ff 100%);
+	}
+
 	#project-container {
 		padding-top: 175px;
+	}
+
+	#project-slides {
+		justify-content: space-evenly;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.slide {
+	align-items: center;
+	}
+		
+	.slide-info {
+		color: white;
+		font-weight: 600;
+		line-height: 1.5;
+		text-shadow: -1px 1px black;
+		text-align: justify;
+		padding-top: 50px;
+		width: 100%;
+	}
+
+	.slide-image-button {
+		width: 100%;
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+
+	.slide-button {
+			transition: transform 0.2s;
+			max-width: 200px;
+			width: 35%;
+	}
+
+	.card-button:hover, .social-button:hover {
+		transform: scale(1.2);
+	}
+
+	#projects-attr-divider {
+		margin: 50px auto 125px;
+	}
+
+	#contact {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: unset;
+		padding-bottom: 100px;
+	}
+
+	.socials {
+		width: 75px;
+		height: 75px;
 	}
 
 	.social-button {
@@ -573,24 +645,17 @@ header {
 		transition: transform 0.2s;
 	}
 
-	.slide {
-		display: flex;
-		justify-content: space-evenly;
+	.social-button:hover {
+		transform: scale(1.15);
 	}
 
-	.slide-info h3, .slide-image-button h3 {
-		color: #f0a500ff;
-		font-size: 1.17rem;
-	}
-
-	#projects-attr-divider {
-		margin: 100px auto;
-	}
-
-	#contact {
-		display: flex;
-		justify-content: space-evenly;
-		padding-bottom: 100px;
+	.tooltip {
+		padding: 8px 0;
+		position: absolute;
+		top: 80%;
+		left: -25%;
+		width: 120px;
+		z-index: 1;
 	}
 
 	.attribution{
@@ -600,123 +665,26 @@ header {
 		padding-bottom: 100px;
 		text-shadow: none;
 	}
+}
 
-	/*Device specific styles*/
-
-	.card-header {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-		height: 150px;
-		padding: 15px 0;
-		position: relative;
-	}
-
-	.card-logo {
-		background-color: #f0a500ff;
-		border: 2px solid white;
-		border-radius: 50%;
-		box-shadow: -2px 3px 5px 1px black;
-		padding: 20px;
-		height: 90px;
-		width: 90px;
-	}
-
-	.buttons {
-		display: flex;
-		justify-content: space-evenly;
-		width: 100%;
-	}
-
-	#project-slides {
-		display: flex;
-		justify-content: space-evenly;
-		margin: 0 auto;
-		padding: 50px 0;
-		width: 70%;
-	}
-
-	.slide-image { /*Limit responsiveness*/
-		width: 100%; /*edit relative units*/
-		/*height: 250px;*/
-	}
-
-	.slide-image-button {
-		width: 35%;
+@media screen and (min-width: 1024px) {
+	.slide {
+		background-image: linear-gradient(#709fdcff 15%, #b9d5fdff 90%);
+		border-radius: 25px;
+		box-shadow: -3px 3px 5px 1px black;
+		flex-direction: row;
+		width: 80%;
 	}
 
 	.slide-info {
-		color: white;
-		font-weight: 600;
-		line-height: 1.5;
-		text-shadow: -1px 1px black;
-		text-align: justify;
-		padding-top: 50px;
-		width: 45%;
+		order: 1;
 	}
 
-	.slide-button { /*Limit responsiveness*/
-		cursor: not-allowed;	/*temporary. Remove when project started*/
-		margin: 0 auto;
-		background-color: #f0a500ff;
-		border: 1px solid #f0a500ff;
-		border-radius: 15px;
-		box-shadow: -1px 1px 3px 1px black;
-		color: #274684ff;
-		font-weight: 600;
-		margin: 0 15px;
-		padding: 7px 0;
-		text-decoration: none;
-		transition: transform 0.2s;
-		width: 40%;
-	}
+	.slide-image-button {
+        order: 2;
+    }
 
-	.slide-button-logo { /*Limit responsiveness*/
-		width: 30px;
-		height: 30px;
-	}
-
-	.card-button:hover, .social-button:hover {
-		transform: scale(1.2);
-	}
-
-	#light-section {
-		background-image: linear-gradient(0deg, #709fdcff 94%, #071739ff 100%);
-	}
-
-	.socials { /*Limit responsiveness*/
-		width: 110px;
-		height: 110px;
-	}
-
-	.social-button:hover {
-		transform: scale(1.15);
-	}
-
-	.tooltip::after {
-		content: " ";
-		position: absolute;
-		top: 100%;
-		right: 100%; /* To the left of the tooltip */
-		margin-top: -5px;
-		border-width: 5px;
-		border-style: solid;
-		border-color: transparent black transparent transparent;
-	}
-
-	.tooltip {
-		/* visibility: hidden; */
-		width: 120px;
-		background-color: black;
-		color: #f0a500ff;
-		font-size: 1em;
-		font-weight: 600;
-		text-align: center;
-		padding: 8px 0;
-		border-radius: 6px;
-		position: absolute;
-		z-index: 1;
-	}
-
+    #projects-attr-divider {
+    	margin: 150px auto 125px;
+    }
 }
