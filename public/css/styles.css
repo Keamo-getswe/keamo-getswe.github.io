@@ -197,9 +197,14 @@ header {
 
 .card-body-section {
     border-bottom: 1px solid #d69200ff;
+    display: flex;
     margin: 0 auto;
     padding: 0 20px;
     width: 65%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-body-section:first-child {
@@ -208,6 +213,10 @@ header {
 
 .card-body-section:last-child {
     border-bottom: none;
+}
+
+.card-section-item {
+	width: 100%;
 }
 
 .card-section-item p {
@@ -225,11 +234,13 @@ header {
    font-size: 1.3em;
    font-weight: 600;
    padding: 20px 25px;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   -o-user-select: none;
-   -webkit-user-select: none;
-   user-select: none;
+}
+
+.collapse-status {
+    float: right;
+    display: inline-block;
+    height: auto;
+    width: 12px;
 }
 
 #light-section {
@@ -366,7 +377,7 @@ header {
 }
 
 /**************************************************
-				DESKTOP VIEW
+				TABLET VIEW
 **************************************************/
 
 @media screen and (min-width: 425px) {
@@ -418,11 +429,11 @@ header {
 		background: transparent url(../images/twinkling.svg) repeat top center;
 		background-size: contain;
 		z-index: 0;
-		-moz-animation: move-twink-back 150s linear infinite;
-		-ms-animation: move-twink-back 150s linear infinite;
-		-o-animation: move-twink-back 150s linear infinite;
-		-webkit-animation: move-twink-back 150s linear infinite;
-		animation: move-twink-back 150s linear infinite;
+		-moz-animation: move-twink-back 100s linear infinite;
+		-ms-animation: move-twink-back 100s linear infinite;
+		-o-animation: move-twink-back 100s linear infinite;
+		-webkit-animation: move-twink-back 100s linear infinite;
+		animation: move-twink-back 75s linear infinite;
 	}
 
 	/****************************************Main*/
@@ -442,7 +453,7 @@ header {
 	}
 
 	#dark-section {
-		background-image: linear-gradient( #040b1aff 20%, transparent 40% );
+		background: linear-gradient( #040b1aff 20%, transparent 40% );
 		margin-top: -25px;
 		padding-top: 225px;
 	}
@@ -528,12 +539,6 @@ header {
 	}
 
 	.card-button {
-		cursor: pointer;
-		color: white;
-		background-color: transparent;
-		border: none;
-		font-weight: 600;
-		padding: 20px 25px;
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
@@ -559,10 +564,6 @@ header {
 	}
 
 	.card-logo img {
-		width: 100%;
-	}
-
-	.card-section-item {
 		width: 100%;
 	}
 
@@ -607,7 +608,9 @@ header {
 	.buttons {
 		display: flex;
 		justify-content: space-evenly;
+		margin: 0 auto;
 		width: 100%;
+		max-width: 551px;
 	}
 
 	.slide-button {
@@ -664,6 +667,13 @@ header {
 		line-height: 1.5;
 		padding-bottom: 100px;
 		text-shadow: none;
+	}
+}
+
+@media screen and (min-width: 685px) {
+	.card-container {
+		overflow-x: hidden;
+		justify-content: space-evenly
 	}
 }
 

@@ -1,12 +1,11 @@
-setCollapsibles();
+setBioCollapsibles();
+setCardCollapsibles();
 addEmailToClipboard();
 
-function setCollapsibles() {
-	var cardBtns = document.querySelectorAll(".card-button");
+function setBioCollapsibles() {
 	var moreBtn = document.querySelector("#more-btn");
 	var restOfBio = moreBtn.parentNode.nextElementSibling;
 	var lessBtn = document.querySelector("#less-btn");
-	var openedCollapsible = [];
 	
 	moreBtn.addEventListener('click', function () {
 		lessBtn.innerHTML = "Less...";
@@ -19,14 +18,20 @@ function setCollapsibles() {
 		moreBtn.innerHTML = "More...";
 		lessBtn.innerHTML = "";
 	})
+}
 
+function setCardCollapsibles() {
+	var cardBtns = document.querySelectorAll(".card-button");
+	var openedCollapsible = [];
 	for (var i = 0; i < cardBtns.length; ++i) {
 		cardBtns[i].addEventListener("click", function () {
-			var sectionItem = this.nextElementSibling;
+			var sectionItem = this.nextElementSibling.nextElementSibling;
+            var arrow = this.nextElementSibling.children[0];
 			if (sectionItem.style.maxHeight) {
 				sectionItem.style.maxHeight = null;
 				sectionItem.style.paddingBottom = "0px";
 				openedCollapsible.pop();
+                arrow.src = "public/images/plus-sign.png";
 			} else {
 				if (openedCollapsible.length !== 0) {
 					var alreadyOpened = openedCollapsible.pop();
@@ -35,6 +40,7 @@ function setCollapsibles() {
 				openedCollapsible.push(this);
 				sectionItem.style.maxHeight = sectionItem.scrollHeight + "px";
 				sectionItem.style.paddingBottom = "15px";
+                arrow.src = "public/images/minus-sign.png";
 			}
 		});
 	}
