@@ -157,7 +157,7 @@ header {
     border-radius: 25px;
     box-shadow: -2px 2px 5px 1px black;
     display: inline-block;
-    margin: 0 50px;
+    margin: 0 25px;
     min-width: 280px;
     width: 76%;
     padding: 50px 0 30px;
@@ -498,7 +498,7 @@ header {
 		box-shadow: -2px 2px 5px 1px black;
 		display: inline-block;
 		color: black;
-		margin: 0 50px;
+		margin: 0 25px;
 		word-wrap: break-word;
 		padding-bottom: 15px;
 		max-width: 350px;
