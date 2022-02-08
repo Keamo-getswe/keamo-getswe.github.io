@@ -72,6 +72,7 @@ p {
 	margin: 0 auto;
 	text-align: justify;
 	width: 75%;
+	max-width: 1145px;
 }
 
 ul {
@@ -146,6 +147,7 @@ header {
     overflow-x: scroll;
     padding: 25px 0;
     width: 100%;
+    max-width: 1600px;
 }
 
 #work-experience {
@@ -331,6 +333,9 @@ header {
     padding: 50px 0 75px;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
 }
 
 #email {
@@ -684,6 +689,7 @@ header {
 		box-shadow: -3px 3px 5px 1px black;
 		flex-direction: row;
 		width: 80%;
+		max-width: 1145px;
 	}
 
 	.slide-info {
