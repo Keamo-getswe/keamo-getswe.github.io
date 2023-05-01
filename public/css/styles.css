@@ -289,12 +289,12 @@ header {
 
 .buttons {
     padding-bottom: 50px;
-    opacity: 0.6;
 }
 
 .slide-button {
     background-color: #f0a500ff;
     border-radius: 18px;
+	cursor: pointer;
     /* box-shadow: -1px 1px 3px 1px black; */
     padding: 10px;
     margin: 0 10px;
