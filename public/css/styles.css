@@ -3,7 +3,6 @@
 **************************************************/
 
 *, html {
-	font-size: 16px;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -251,22 +250,54 @@ header {
 
 #project-container {
     padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slide-navigation {
+	text-shadow: none;
+	color: #040b1aff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 48px;
+}
+
+.previous-slide {
+	cursor: pointer;
+}
+
+.next-slide {
+	cursor: pointer;
 }
 
 #project-slides {
     border-radius: 25px;
+	position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+	align-items: center;
     margin: 0 auto;
     width: 100%;
+	height: 1107px;
+	overflow: hidden;
 }
 
 .slide {
-    display: flex;
+    position: absolute;
+	display: flex;
     flex-direction: column;
-    padding: 50px 0 75px;
     width: 100%;
+	transform: translateX(120%);
+	transition: transform 0.5s;
+}
+
+.current {
+	transform: translateX(0);
+}
+
+.old-slide {
+	transform: translateX(-120%);
 }
 
 .slide-image-button {
@@ -683,21 +714,38 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+	.card-containter {
+		position: relative;
+		justify-content: center;
+	}
+
+	.slide-navigation {
+		width: 80%;
+	}
+
+	#project-slides {
+		height: 800px;
+	}
+
 	.slide {
 		background-image: linear-gradient(#709fdcff 15%, #b9d5fdff 90%);
 		border-radius: 25px;
 		box-shadow: -3px 3px 5px 1px black;
 		flex-direction: row;
 		width: 80%;
-		max-width: 1145px;
+		max-width: 1056px;
 	}
 
 	.slide-info {
 		order: 1;
+		height: 606px;
+		padding-top: 50px;
 	}
 
 	.slide-image-button {
         order: 2;
+		height: 606px;
+		padding-top: 50px;
     }
 
     #projects-attr-divider {
