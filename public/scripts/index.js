@@ -60,3 +60,27 @@ function addEmailToClipboard() {
 		});
 	});
 }
+
+var prevSlideBtn = document.getElementById("previous-slide");
+var nextSlideBtn = document.getElementById("next-slide");
+
+prevSlideBtn.addEventListener('click', function () {
+	let currentSlide = document.getElementsByClassName("current")[0];
+	let prevSlide = currentSlide.previousElementSibling;
+	if (prevSlide !== null) {
+		currentSlide.classList.toggle("current");
+		prevSlide.classList.toggle("current");
+		prevSlide.classList.toggle("old-slide");
+	}
+});
+
+nextSlideBtn.addEventListener('click', function () {
+	let currentSlide = document.getElementsByClassName("current")[0];
+	let nextSlide = currentSlide.nextElementSibling;
+	if (nextSlide !== null) {
+		currentSlide.classList.toggle("old-slide");
+		currentSlide.classList.toggle("current");
+		nextSlide.classList.toggle("current");
+	}
+});
+
