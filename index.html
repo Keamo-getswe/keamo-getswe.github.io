@@ -1,187 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
-        <title>Kea Mphakalasi</title>
-        <link rel="stylesheet" href="public/css/styles.css">
+        <meta charset="utf-8">
+        <title>Whoops...</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
-        <link rel="icon" href="public/images/letter_k.ico" sizes="16x16 32x32" type="image/x-icon">
+        <link rel="icon" href="public/images/settings.png" sizes="16x16 32x32" type="image/x-icon">
+        <style>
+            *, html {
+                font-size: 16px;
+            }
+
+            body {
+                background: #040b1aff url("public/images/star-foreground.svg") top center;
+                background-color: #071739ff;
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                flex-direction: column;
+                font-size: 100%;
+                align-items: center;
+                height: 100vh;
+            }
+
+            h1 {
+                font-size: 3em;
+                font-weight: 900;
+            }
+
+            h3 {
+                font-size: 2.5em;
+                font-weight: 600;
+                width: 80%;
+            }
+
+            h1, h3 {
+                color: #f0a500ff;
+                font-family: 'Ubuntu', sans-serif;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .container {
+                width: 50%;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 300px;
+                width: 60%;
+            }
+
+        </style>
     </head>
     <body>
-        <header>
-            <div class="stars">
-            </div>
-            <div class="twinkling">
-            </div>
-            <div id="moon-container">
-                <img id="moon" src="public/images/full-moon.svg" alt="Keamogetswe Mphakalasi">
-            </div>
-        </header>
-        <main>
-            <div id="dark-section">
-                <div id="bio">
-                    <h2 class="heading">Bio</h2>
-                    <div id="container">
-                        <p>I am Keamogetswe Morobi Mphakalasi. As of 2023, I graduated from the University of South Africa with a BSc in Computing. Going forward, I would like to specialize in Cybersecurity and upon completion of my studies, I aspire to become a cloud security engineer. <button id="more-btn" class="more-less-button">More...</button></p>
-                        <div class="collapsible">
-                            <br><p>As of late, I have explored contributing to Github projects (see "Obsidian to HTML" under <a href="#personal-projects">Personal Projects</a>) to get more comfortable reading and working on others' code. Below you will find my work experience as well as other projects I have worked on.<br><br>In my spare time, I read classic self-help and mystery books. I also enjoy long jogs, hiking and spending time with my dogs.<button id="less-btn" class="more-less-button"></button></p>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div id="work-experience">
-                    <h2 class="heading">Work Experience</h2>
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3>Web Designer</h3><h4>at Injeanius Designs</h4><br>
-                                <div class="card-logo">
-                                    <img src="public/images/illustration.png">
-                                </div>
-                            </div>
-                            <!--<hr class="card-divider">-->
-                            <div class="card-body">
-                                <div class="card-body-section">
-                                    <button class="card-button">Duration</button><span><img class="collapse-status" src="public/images/plus-sign.png"></span>
-                                    <div class="card-section-item collapsible">
-                                        <p>Sep 2020 - Feb 2021</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-section">
-                                    <button class="card-button">Duties</button><span><img class="collapse-status" src="public/images/plus-sign.png"></span>
-                                    <div class="card-section-item collapsible">
-                                        <p>Frontend web design and development of Wordpress websites.</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-section">
-                                    <button class="card-button">Tech</button><span><img class="collapse-status" src="public/images/plus-sign.png"></span>
-                                    <div class="card-section-item collapsible">
-                                        <p>HTML, CSS, PHP and Divi.</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-section">
-                                    <button class="card-button">Reference</button><span><img class="collapse-status" src="public/images/plus-sign.png"></span>
-                                    <div class="card-section-item collapsible">
-                                        <p>Mrs Jeandre Roets<br>jeandre@injeanius.co.za</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h3>Comp Sci Tutor</h3><h4>at Stellenbosch University</h4><br>
-                                <div class="card-logo">
-                                    <img src="public/images/knowledge.png">
-                                </div>
-                            </div>
-                            <!--<hr class="card-divider">-->
-                            <div class="card-body">
-                                <div class="card-body-section">
-                                    <button class="card-button">Duration</button><span><img class="collapse-status" src="public/images/plus-sign.png"></span>
-                                    <div class="card-section-item collapsible">
-                                        <p>Feb 2018 - Jun 2018</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-section">
-                                <button class="card-button">Duties</button><span><img class="collapse-status" src="public/images/plus-sign.png"></span>
-                                    <div class="card-section-item collapsible">
-                                        <p>Assisted students with programming exercises and semester project.</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-section">
-                                    <button class="card-button">Tech</button><span><img class="collapse-status" src="public/images/plus-sign.png"></span>
-                                    <div class="card-section-item collapsible">
-                                        <p>Java, Ubuntu.</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-section">
-                                    <button class="card-button">Reference</button><span><img class="collapse-status" src="public/images/plus-sign.png"></span>
-                                    <div class="card-section-item collapsible">
-                                        <p>Prof Jaco Geldenhuys<br>geld@sun.ac.za</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="light-section">
-                <div id="project-container">
-                    <h2 id="personal-projects" class="heading">Personal Projects</h2>
-                    <div id="project-slides">
-                        <div class="slide current">
-                            <div class="slide-info">
-                                <h3>About:</h3>
-                                <p>As an introduction to contributing on Github, I collaborated with a friend on a program that would convert notes in an Obsidian vault, into html wikis that maintain the links between the pages.</p>
-                                <h3>Technologies:</h3>
-                                <p>Developed with Python, featuring some minor CSS and JS.</p><br>
-                            </div>
-                            <div class="slide-image-button">
-                                <h3>Obsidian to HTML</h4>
-								<br>
-                                <img class="slide-image" src="public/images/Obsidian_to_HTML.png"><br>
-                                <div class="buttons">
-                                    <button class="slide-button" onclick="window.location.href='https://github.com/Keamo-getswe/Obsidian-to-html';" title="View source code">
-                                        <img class="slide-button-logo" src="public/images/code.png">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="slide-info">
-                                <h3>About:</h3>
-                                <p>This project was built under the guidance of Angela Yu's course and is incrementally being fixed up to become a fully functional to-do list webapp.</p>
-                                <h3>Technologies:</h3>
-                                <p>Developed with the MERN the stack (ReactJS yet to be implemented), database hosted on MongoDB Atlas and backend hosted on Render.</p><br>
-                            </div>
-                            <div class="slide-image-button">
-                                <h3>To-do List</h3>
-                                <h4><i>(in progress)</i></h4>
-                                <img class="slide-image" src="public/images/taskmaster.png"><br>
-                                <div class="buttons">
-                                    <button class="slide-button" onclick="window.location.href='https://todo-list-0cp7.onrender.com/';" title="Go to site">
-                                        <img class="slide-button-logo" src="public/images/worldwide.png">
-                                    </button>
-                                    <button class="slide-button" onclick="window.location.href='https://github.com/Keamo-getswe/todo_mern';" title="View source code">
-                                        <img class="slide-button-logo" src="public/images/code.png">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-					<div class="slide-navigation">
-						<div id="previous-slide">
-							&lArr;
-						</div>
-						<div id="next-slide">
-							&rArr;
-						</div>
-					</div>
-                </div>
-                <hr id="projects-attr-divider">
-                <h2 class="heading">Contact Me</h2>
-                <div id="contact">
-                    <a class="social-button" title="My Github" href="https://github.com/Keamo-getswe">
-                        <img class="socials" src="public/images/github.png">
-                    </a>
-                    <a class="social-button" title="My LinkedIn" href="https://www.linkedin.com/in/keamogetswe-mphakalasi"/>
-                        <img class="socials" src="public/images/linkedin.png">
-                    </a>
-                    <div id="email" style="position: relative;">
-                        <button class="social-button" title="My email">
-                            <img class="socials" src="public/images/email.png">
-                        </button>
-                        <span class="tooltip">Copied to clipboard</span>
-                    </div>
-                </div>
-                <div class="attribution">
-                    <p>Favicon by <a href="https://www.flaticon.com/authors/laisa-islam-ani" title="Laisa Islam Ani">Laisa Islam Ani</a> and icons by <a href="https://www.freepik.com" title="Freepik">Freepik</a>. Find them both at <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.</p>
-                    <p>Website designed, developed and maintained by Keamogetswe Mphakalasi.</p>
-                </div>
-            </div>
-        </main>	
-        <script src="public/scripts/index.js"></script>
+       <h1>We're sorry</h1>
+       <div class="container">
+           <img src="public/images/under-construction.png">
+       </div>
+       <h3>This site is temporarily closed for maintenance.</h3>
     </body>
 </html>
